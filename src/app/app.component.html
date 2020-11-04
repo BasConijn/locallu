@@ -1,3 +1,10 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Angular training</span>
+</mat-toolbar>
+
 <nav>
   <ul>
     <li><a routerLink="/errorcodes">ErrorCodes</a></li>
@@ -6,4 +13,6 @@
   </ul>
 </nav>
 
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>

@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon'
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgxsModule } from '@ngxs/store';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,7 +13,6 @@ import { AppState } from 'app/app.state';
 import { ErrorCodesComponent } from './error-codes/error-codes.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { RepairsComponent } from './repairs/repairs.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgxsModule.forRoot([AppState], {
       developmentMode: !environment.production
     }),
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
