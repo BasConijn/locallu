@@ -9,6 +9,8 @@ Uses routes and router-outlet
 Custom directives
 Custom pipes
 
+Reference: https://github.com/arcanous/moviedb-client
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "shortDescription": "Small fix",
+    "longDescription": "This is the first solution"
+  },
+  {
+    "id": "2",
+    "shortDescription": "Larger fix",
+    "longDescription": "This is the second solution"
+  }
+]

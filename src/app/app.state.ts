@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
 import { State } from '@ngxs/store';
+import { AppStateModel } from 'app/app.model';
+import * as errorcodes from './errorcodes.json';
+import * as solutions from './solutions.json';
 
-@State<string[]>({
+@State<AppStateModel>({
   name: 'app',
-  defaults: []
+  defaults: {
+    errorcodes,
+    solutions,
+  }
 })
 @Injectable()
 export class AppState {}

@@ -4,8 +4,8 @@ import { NgxsModule } from '@ngxs/store';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from 'src/environments/environment';
-import { AppState } from 'src/app/app.state';
+import { environment } from 'environments/environment';
+import { AppState } from 'app/app.state';
 
 @NgModule({
   declarations: [
