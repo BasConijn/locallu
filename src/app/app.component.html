@@ -1,18 +1,21 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button>
+  <button mat-icon-button (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
   <span>Angular training</span>
 </mat-toolbar>
 
-<nav>
-  <ul>
-    <li><a routerLink="/errorcodes">ErrorCodes</a></li>
-    <li><a routerLink="/solutions">Solutions</a></li>
-    <li><a routerLink="/repairs">Repairs</a></li>
-  </ul>
-</nav>
-
-<main>
-  <router-outlet></router-outlet>
-</main>
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side" opened="true">
+    <nav>
+      <ul>
+        <li><a routerLink="/errorcodes">ErrorCodes</a></li>
+        <li><a routerLink="/solutions">Solutions</a></li>
+        <li><a routerLink="/repairs">Repairs</a></li>
+      </ul>
+    </nav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
