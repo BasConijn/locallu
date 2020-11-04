@@ -6,10 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'environments/environment';
 import { AppState } from 'app/app.state';
+import { ErrorCodesComponent } from './error-codes/error-codes.component';
+import { SolutionsComponent } from './solutions/solutions.component';
+import { RepairsComponent } from './repairs/repairs.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ErrorCodesComponent,
+    SolutionsComponent,
+    RepairsComponent
   ],
   imports: [
     BrowserModule,
