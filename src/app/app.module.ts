@@ -9,6 +9,7 @@ import { AppState } from 'app/app.state';
 import { ErrorCodesComponent } from './error-codes/error-codes.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { RepairsComponent } from './repairs/repairs.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { RepairsComponent } from './repairs/repairs.component';
     RepairsComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     NgxsModule.forRoot([AppState], {
       developmentMode: !environment.production
-    })
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
