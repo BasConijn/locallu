@@ -7,7 +7,7 @@
           {{ errorcode.code }}
         </mat-card-title>
         <div class="menu-button">
-          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu for errorcode">
             <mat-icon>more_vert</mat-icon>
           </button>
         </div>
@@ -17,6 +17,12 @@
       </mat-card-content>
     </mat-card>
   </div>
+</div>
+
+<div class="floating-action-button">
+  <button mat-fab color="primary" aria-label="Add errorcode">
+    <mat-icon>add</mat-icon>
+  </button>
 </div>
 
 <mat-menu #menu="matMenu">
