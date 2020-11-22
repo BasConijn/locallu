@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import { State } from '@ngxs/store';
+import { Selector, State } from '@ngxs/store';
 import { AppStateModel } from 'app/app.model';
-import * as errorcodes from './errorcodes.json';
-import * as solutions from './solutions.json';
+import { ErrorCode } from 'app/core/errorcode.model';
+import { Solution } from 'app/core/solution.model';
+import errorcodes from './errorcodes.json';
+import solutions from './solutions.json';
 
 @State<AppStateModel>({
   name: 'app',
@@ -12,4 +14,7 @@ import * as solutions from './solutions.json';
   }
 })
 @Injectable()
-export class AppState {}
+export class AppState {
+  @Selector() static errorcodes(state: AppStateModel): ErrorCode[] { return state.errorcodes; }
+  @Selector() static solutions(state: AppStateModel): Solution[] { return state.solutions; }
+}

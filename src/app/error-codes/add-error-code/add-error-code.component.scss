@@ -1,0 +1,11 @@
+.container {
+  margin-left: 8px;
+}
+
+.row {
+  display: block;
+
+  button + button {
+    margin-left: 8px;
+  }
+}
