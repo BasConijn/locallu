@@ -7,6 +7,9 @@ import { SolutionsComponent } from 'app/solutions/solutions.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: ErrorCodesComponent,
+  }, {
     path: 'errorcodes',
     component: ErrorCodesComponent,
   }, {
